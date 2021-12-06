@@ -1,0 +1,130 @@
+.wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B9BEC7BF;
+    z-index: 100;
+}
+
+.popup {
+    padding: 0px 40px 30px;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+}
+
+.icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 90px;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+}
+.icon img {
+    width: 100%;
+}
+
+.title {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #2F3862;
+}
+
+.message {
+    max-width: 372px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #55565B;
+}
+
+.cross svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 15px;
+    color: #B9BEC7;
+    cursor: pointer;
+}
+.cross svg:hover {
+    color: #DE2828;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.btns div {
+    border-radius: 5px;
+    height: 40px;
+    width: 98px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btns div:first-child {
+    background: #B9BEC7;
+    margin-right: 35px;
+}
+.btns div:first-child:hover {
+    border: 2px solid #B9BEC7;
+    background: #FFF;
+    color: #B9BEC7;
+}
+.btns div:last-child {
+    background: #DE2828;
+}
+.btns div:last-child:hover {
+    border: 2px solid #DE2828;
+    background: #FFF;
+    color: #DE2828;
+}
+
+@media (max-width: 766px) {
+    .popup {
+        padding: 0px 20px 20px;
+        margin: 0px 20px;
+    }
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+    }
+    .title {
+        margin-top: 45px;
+        font-size: 16px;
+    }
+    
+    .message {
+        font-size: 14px;
+    }
+
+    .btns {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .btns div {
+        height: 35px;
+        width: 88px;
+    }
+}
+

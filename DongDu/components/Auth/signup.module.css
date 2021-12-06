@@ -1,0 +1,457 @@
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.imgUp {
+  position: absolute;
+  margin-top: 40px;
+}
+
+.imgDown {
+  width: 100%;
+}
+
+.wrapContainer {
+  height: 549px;
+  width: 100% !important;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 5px #00000033;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 498px;
+}
+
+.titleBox {
+  font: normal normal bold 32px/43px Roboto !important;
+  letter-spacing: 0px;
+  color: #55565b;
+  opacity: 1;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.wrapInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  text-align: left;
+  font: normal normal normal 11px/15px Roboto !important;
+  letter-spacing: 0px;
+  color: #55565b;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+
+.iconEmail,
+.iconPass,
+.iconUser {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin: 32px 0px 0px 10px;
+}
+
+.groupEmail,
+.groupPass,
+.groupUser {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+  height: 85px;
+}
+
+.inputTextEmail,
+.inputTextPass,
+.inputTextUser {
+  width: 360px;
+  height: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e9ebf0;
+  border-radius: 5px;
+  opacity: 1;
+  padding: 5px 10px 5px 38px;
+  font-size: 12px;
+}
+
+/* .inputTextEmail{
+    background: url("../../public/assets/mail-send-icon.svg") ;
+    background-position: left;
+    background-repeat: no-repeat;
+} */
+
+.inputTextEmail::placeholder,
+.inputTextUser::placeholder {
+  font: normal normal normal 12px/19px Roboto;
+  letter-spacing: 0px;
+  color: #b9bec7;
+  opacity: 1;
+}
+
+.inputTextEmail:focus,
+.inputTextPass:focus,
+.inputTextUser:focus {
+  border: 1px solid #e9ebf0;
+  outline: none;
+}
+
+.showPass {
+  border: none;
+  background: #fff;
+  position: absolute;
+  margin-left: 308px;
+  margin-top: 30px;
+  font: normal normal normal 14px/19px Roboto;
+  color: #2a6ea7;
+  cursor: pointer;
+}
+
+.showPass:focus {
+  outline: none;
+}
+
+.btnSignup {
+  font: normal normal bold 14px/19px Roboto !important;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  width: 360px;
+  height: 50px;
+  background: #2a6ea7;
+  border-radius: 5px;
+  border: none;
+}
+
+.horizontalLine {
+  width: 72%;
+  text-align: center;
+  border-bottom: 1px solid #e9ebf0;
+  line-height: 0.01em;
+  margin: 25px 0 15px;
+}
+
+.errInput {
+  color: #de2828;
+}
+
+.requireErr {
+  font: normal normal normal 11px/15px Roboto;
+  color: #de2828;
+}
+
+.iconErr {
+  filter: invert(20%) sepia(79%) saturate(4888%) hue-rotate(352deg)
+    brightness(92%) contrast(87%);
+}
+
+.iconWarn {
+  filter: invert(20%) sepia(79%) saturate(4888%) hue-rotate(352deg)
+    brightness(92%) contrast(87%);
+  width: 10px;
+  height: 9px;
+  margin-top: -1px;
+}
+
+.groupErr {
+  height: 20px;
+  margin-top: -5px;
+}
+
+.horiText {
+  background-color: #ffffff;
+  padding: 0 25px;
+  font-family: normal normal normal Roboto;
+  font-size: 11px;
+  color: #55565b;
+  opacity: 1;
+}
+.horiText a {
+  margin-right: 5px;
+  color: #2a6ea7;
+  font-weight: bold;
+}
+.groupBtn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btnFb {
+  width: 90px;
+  height: 30px;
+  background: #4e709d 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 10px;
+}
+
+.btnGoogle {
+  width: 90px;
+  height: 30px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  opacity: 1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+.btnGoogle:focus,
+.btnFb:focus,
+.btnSignup:focus {
+  outline: none;
+}
+.btnSignup:hover {
+  background: #1a5587;
+}
+
+.iconFb {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+
+.labelFb {
+  text-align: left;
+  font: normal normal normal 11px/15px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.labelGoogle {
+  text-align: left;
+  font: normal normal normal 11px/15px Roboto;
+  letter-spacing: 0px;
+  color: #55565b;
+  opacity: 1;
+}
+
+.iconGoogle {
+  width: 15px;
+  height: 15px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.inputTextUser:-webkit-autofill,
+.inputTextEmail:-webkit-autofill,
+.inputTextPass:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: #333;
+}
+
+.inputTextUser:-webkit-autofill:focus,
+.inputTextEmail:-webkit-autofill:focus,
+.inputTextPass:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset; /*your box-shadow*/
+  -webkit-text-fill-color: #333;
+}
+
+/*  Success Check Animation Pure CSS */
+.success-checkmark {
+  width: 80px;
+  height: 115px;
+  margin: 0 auto;
+}
+.success-checkmark .check-icon {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 4px solid #4caf50;
+}
+.success-checkmark .check-icon::before {
+  top: 3px;
+  left: -2px;
+  width: 30px;
+  transform-origin: 100% 50%;
+  border-radius: 100px 0 0 100px;
+}
+.success-checkmark .check-icon::after {
+  top: 0;
+  left: 30px;
+  width: 60px;
+  transform-origin: 0 50%;
+  border-radius: 0 100px 100px 0;
+  animation: rotate-circle 4.25s ease-in;
+}
+.success-checkmark .check-icon::before,
+.success-checkmark .check-icon::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  background: #ffffff;
+  transform: rotate(-45deg);
+}
+.success-checkmark .check-icon .icon-line {
+  height: 5px;
+  background-color: #4caf50;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+}
+.success-checkmark .check-icon .icon-line.line-tip {
+  top: 46px;
+  left: 14px;
+  width: 25px;
+  transform: rotate(45deg);
+  animation: icon-line-tip 0.75s;
+}
+.success-checkmark .check-icon .icon-line.line-long {
+  top: 38px;
+  right: 8px;
+  width: 47px;
+  transform: rotate(-45deg);
+  animation: icon-line-long 0.75s;
+}
+.success-checkmark .check-icon .icon-circle {
+  top: -4px;
+  left: -4px;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: content-box;
+  border: 4px solid rgba(76, 175, 80, 0.5);
+}
+.success-checkmark .check-icon .icon-fix {
+  top: 8px;
+  width: 5px;
+  left: 26px;
+  z-index: 1;
+  height: 85px;
+  position: absolute;
+  transform: rotate(-45deg);
+  background-color: #ffffff;
+}
+
+.form-container {
+  min-height: 310px;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.center-content h5 {
+  margin-top: 3rem;
+  color: #2a6ea7;
+}
+
+.create-error {
+  color: red;
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes icon-line-tip {
+  0% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  54% {
+    width: 0;
+    left: 1px;
+    top: 19px;
+  }
+  70% {
+    width: 50px;
+    left: -8px;
+    top: 37px;
+  }
+  84% {
+    width: 17px;
+    left: 21px;
+    top: 48px;
+  }
+  100% {
+    width: 25px;
+    left: 14px;
+    top: 45px;
+  }
+}
+@keyframes icon-line-long {
+  0% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  65% {
+    width: 0;
+    right: 46px;
+    top: 54px;
+  }
+  84% {
+    width: 55px;
+    right: 0px;
+    top: 35px;
+  }
+  100% {
+    width: 47px;
+    right: 8px;
+    top: 38px;
+  }
+}
+
+/*  Success Check Animation Pure CSS */
+
+@media (max-width: 800px) {
+  .imgUp {
+    display: none;
+  }
+  .wrapContainer {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .showPass {
+    margin-left: 175px;
+  }
+  .inputTextEmail,
+  .inputTextPass,
+  .inputTextUser {
+    width: 100%;
+  }
+  .btnSignup {
+    width: 100%;
+  }
+}
