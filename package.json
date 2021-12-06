@@ -15,7 +15,7 @@
     "dev:init": "cross-env NODE_ENV=development PORT=3000 INIT_DATA=true DISABLE_LOGGING=true node server.js",
     "build:api": "cd ./DongDu-API && cross-env NODE_ENV=production keystone build --out=../dist",
     "build:fe": "cross-env NODE_ENV=production next build ./DongDu",
-    "build": "",
+    "build": "cross-env NODE_ENV=production next build ./DongDu && cd ./DongDu-API && cross-env NODE_ENV=production keystone build --out=../dist",
     "start": "cross-env NODE_ENV=production PORT=3000 node server.js",
     "start:init": "cross-env NODE_ENV=production PORT=3000 INIT_DATA=true node server.js",
     "create-tables": "cross-env keystone create-tables",
