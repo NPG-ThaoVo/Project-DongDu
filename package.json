@@ -8,7 +8,9 @@
   "homepage": "https://github.com/keystonejs/keystone",
   "license": "MIT",
   "engines": {
-    "node": ">=10.0.0"
+    "node": "14.x",
+    "yarn": "1.x",
+    "npm": "8.x"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development PORT=3000 DISABLE_LOGGING=true node server.js",
