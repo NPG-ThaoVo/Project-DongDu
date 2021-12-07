@@ -6,7 +6,7 @@ const { apps, keystone } = require("./DongDu-API");
 const next = require("next");
 
 const dev = process.env.NODE_ENV !== "production";
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 const nextApp = next({ dev, dir: "./DongDu" });
 const handle = nextApp.getRequestHandler();
